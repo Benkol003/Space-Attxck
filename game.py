@@ -60,15 +60,6 @@ class _move(object):
         if ay != None:
             self.accel[1] = ay
 
-
-class _collision(object):  # needs to be inherited after _move
-
-    def __init__(self, *args):
-        self.collides = True
-
-        super().__init__(*args)
-
-
 def collidechk(obj1, xspace1, yspace1, obj2, xspace2, yspace2, calc_side=False):
     # automatically resolves, returns side touching if needed
     collides = False
