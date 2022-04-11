@@ -4,7 +4,7 @@
          \/\_____\  \ \_\    \ \_\ \_\  \ \_____\  \ \_____\     \ \_\ \_\    \ \_\    \ \_\   /\_\/\_\  \ \_____\  \ \_\ \_\ 
           \/_____/   \/_/     \/_/\/_/   \/_____/   \/_____/      \/_/\/_/     \/_/     \/_/   \/_/\/_/   \/_____/   \/_/\/_/
           
-#### _A 2D python game made for university coursework._
+#### _A 2D python game created for university coursework._
 ### Launching and running the game
 Use python 3; main.py requires a python install containing tkinter.
 
