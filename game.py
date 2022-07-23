@@ -227,7 +227,7 @@ jump_count = 0
 def player_jump(events):
     global jump_count
     if jump_count <= 1 or konami_code.cheat == True:
-        player.update(t, None, None, None, -724, None, 2048)
+        player.update(t, None, player.position[1]-10, None, -724, None, 2048)
         jump_count += 1
 # --------
 
