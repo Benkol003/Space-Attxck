@@ -146,10 +146,16 @@ def collisionhdl():
                 winApp.root.bind_all("<KeyPress-space>", lambda a: None)
 
     mob_id_rm = []
-    for i in mobs.keys():
-        if collidechk(player, 64, 64, mobs[i], 64, 64):
+    for i in mobs.keys():  
+        ret = collidechk(player, 64, 64, mobs[i], 64, 64, True)
+        side = ret[1]
+        if ret[0]:
+            if side == 1: #dont deal damage if hit top of mov
+                kill_count += 1
+            else:
+                player.hit()
             mob_id_rm.append(i)
-            player.hit()
+
     for i in mob_id_rm:
         plat_id = mobs[i].plat_id
         platforms[plat_id].mob_ids.remove(i)
